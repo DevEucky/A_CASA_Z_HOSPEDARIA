@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .services-container {
+        max-width: 600px;
+        margin: 0 auto;
+        color: #e0e2db;
+        background: url(https://media.geeksforgeeks.org/wp-content/uploads/20201113113041/paintorder1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .service-item {
+        overflow: hidden;
+        position: relative;
+        padding: 80px;
+      }
+
+      .service-item-black {
+        background-color: rgba(155, 23, 23, 0.7);
+      }
+
+      .front-text {
+        text-align: center;
+        transition: transform 2s;
+      }
+
+      .back-text {
+        position: absolute;
+        bottom: -15em;
+        width: 75%;
+        margin: 0 auto;
+        height: 100%;
+        transition: bottom 1s;
+        padding: 15px 0;
+      }
+
+      .back-text h1 {
+        margin-bottom: 20px;
+      }
+
+      .back-text button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: transparent;
+        border: 2px solid #30804b;
+        font-size: 20px;
+        color: #30804b;
+      }
+
+      .back-text button:hover {
+        background-color: #30804b;
+        color: #191716;
+      }
+
+      .service-item:hover .front-text {
+        transform: translateY(-200px);
+      }
+
+      .service-item:hover .back-text {
+        bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="services-container">
+      <article class="service-item service-item-black">
+        <div class="front-text">
+          <h1>Geeks For Geeks</h1>
+        </div>
+
+        <div class="back-text">
+          <h1>Geeks For Geeks</h1>
+
+          <p>
+            A Computer Science portal for geeks. A Computer Science portal for
+            geeks. A Computer Science portal for geeks.
+          </p>
+
+          <button type="button">Read More</button>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

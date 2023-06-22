@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: sandybrown;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+body {
+  min-height: 100vh;
+}
+
+.firstHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #ff4b1f, #ff9068);
+  min-height: 80px;
+  padding: 0 10px;
+}
+.firstHeader h1 {
+  font-size: 1.7em;
+  color: #fff;
+}
+.icon-1 {
+  color: #fff;
+  padding: 30px;
+  cursor: pointer;
+  transition: 1.2s;
+}
+.icon-1:hover {
+  transform: scale(1.4);
+}
+
+#mainMenu {
+  width: 100%;
+  display: none;
+}
+
+.mainMenu li {
+  background-color: #fc8f47cc;
+  border-bottom: 1px dotted #ff4b1f;
+}
+
+.mainMenu li > a {
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.mainMenu li > a:hover {
+  background-color: #f88257;
+
+  font-variant: small-caps;
+  font-size: 1.2rem;
+}
+header {
+  width: 100%;
+  height: 260px;
+}
+
+.hero {
+  height: 100%;
+  background-color: #a50e0e;
+  background: url(../img/img-03.jpg) center top no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+main {
+  background-color: #e4c36138;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: justify;
+}
+main section.aboutUs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+main > section.aboutUs > h1.aboutUsHeading {
+  text-align: center;
+  width: 80%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eea849;
+  margin-bottom: 15px;
+}
+
+main > section.aboutUs > p.aboutUsParagraph {
+  text-align: center;
+  color: #000;
+  padding: 5px;
+}
+
+main section.prices {
+  min-height: 400px;
+  margin-bottom: 20px;
+}
+main section.prices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+main section.prices h1 {
+  width: 80%;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eea849;
+}
+main > section.prices p.cardItemParagraph {
+  color: #000;
+}
+.cardtem {
+  text-align: center;
+  background-color: aliceblue;
+  width: 300px;
+  height: 280px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cardtem img {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+section.bar h1 {
+  text-align: center;
+}
+.barMenu {
+  display: flex;
+  justify-content: center;
+}
+.barList li {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  width: 90px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eea849;
+  color: #000;
+}
+.barList li:hover {
+  background-color: #f46b45;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.barList a:hover {
+  color: #fff;
+}
+.barList:active a {
+  background-color: #ff4b1f;
+}
+section.bar .barCategory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+.cardBarItem {
+  width: 120px;
+  height: 120px;
+  background-color: #eea849;
+}
+
+.cardBarItem img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+footer {
+  height: 150px;
+  display: block;
+  background-image: linear-gradient(180deg, #f46b45, #eea849);
+  text-align: center;
+}
+footer p {
+  color: #fff;
+}
+.socialNetworks {
+  text-align: center;
+}
+.socialNetworksItem {
+  display: inline-block;
+}
+.socialNetworksItem .icon {
+  padding: 5px;
+  margin: 20px 0;
+}
+.socialNetworksItem .icon:hover {
+  color: #ff4b1f;
+}
+
+.madeBy p {
+  padding-top: 20px;
+}
+
+.roomItem {
+  background-color: #fd9a3eb6;
+}
+
+.cardCategory {
+  position: relative;
+  overflow: hidden;
+}
+.cardCategory-Front {
+  transition: transform 2s;
+}
+.cardCategory-Back p,
+h4 {
+  text-align: center;
+  color: #a50e0e;
+}
+.cardCategory-Back {
+  position: absolute;
+  bottom: -7em;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  transition: bottom 2s;
+  padding: 10px 0;
+}
+.cardCategory:hover .cardCategory-Front {
+  opacity: 0.3;
+}
+.cardCategory:hover .cardCategory-Back {
+  bottom: 0;
+}

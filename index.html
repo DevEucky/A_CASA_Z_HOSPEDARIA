@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>A CASA Z - Hospedaria e Bar</title>
+  </head>
+  <body onresize="resizeWindow()">
+    <div class="firstHeader">
+      <div class="logo"><h1>A CASA Z</h1></div>
+      <div class="burgerMenu" id="burgerMenu">
+        <i class="fa-solid fa-bars fa-2xl icon-1" onclick="showMenu()"></i>
+      </div>
+    </div>
+
+    <nav class="mainMenu" id="mainMenu">
+      <ul>
+        <li><a href="index.html" rel="next" target="_self">Home</a></li>
+        <li><a href="#aboutUs" rel="next" target="_self"> Sobre nós</a></li>
+        <li><a href="#prices" rel="next" target="_self">Preçário</a></li>
+        <li><a href="#contact" rel="next" target="_self">Contactos</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="hero"></div>
+    </header>
+    <main>
+      <section class="aboutUs" id="aboutUs">
+        <h1 class="aboutUsHeading">Sobre Nós</h1>
+
+        <p class="aboutUsParagraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          eius ipsum reiciendis totam porro eligendi voluptatum cumque delectus
+          corporis aspernatur commodi sint dolores officia, ipsam modi
+          repellendus architecto doloribus illo accusantium voluptatem sapiente
+          necessitatibus nam? Obcaecati iste.
+        </p>
+      </section>
+      <section class="prices" id="prices">
+        <h1>Quartos</h1>
+
+        <div class="cardtem roomItem roomItem1">
+          <img src="./img/gallery-img-05.jpg" alt="" />
+          <h3>Suite Master</h3>
+          <p class="cardItemParagraph">5.000,00 AKZ / Noite</p>
+        </div>
+        <div class="cardtem roomItem roomItem2">
+          <img src="./img/gallery-img-06.jpg" alt="" />
+          <h3>Suite Júnior</h3>
+          <p class="cardItemParagraph">3.000,00 AKZ / Noite</p>
+        </div>
+        <div class="cardtem roomItem roomItem3">
+          <img src="./img/img-01.jpg" alt="" />
+          <h3>Suite Familiar</h3>
+          <p class="cardItemParagraph">7.000,00 AKZ / Noite</p>
+        </div>
+      </section>
+      <section class="bar" id="bar">
+        <h1>Bar</h1>
+        <nav class="barMenu">
+          <ul class="barList">
+            <li onclick="showBarList()">Cardápio</li>
+            <li onclick="showDrinkList()">Bebidas</li>
+            <li onclick="showFoodList()">Comidas</li>
+          </ul>
+        </nav>
+        <div class="barCategory">
+          <div class="barCategory CategoryDrinks" id="drinkItems">
+            <div class="cardCategory drinkCard">
+              <div class="cardBarItem drinkItem cardCategory-Front">
+                <img src="./img/img-01.jpg" alt="" />
+              </div>
+              <div class="cardCategory-Back drink-Back">
+                <h4>Gasosa</h4>
+                <p>Coca-Cola</p>
+                <p>300Kz</p>
+              </div>
+            </div>
+            <div class="cardCategory drinkCard">
+              <div class="cardBarItem drinkItem cardCategory-Front">
+                <img src="./img/img-03.jpg" alt="" />
+              </div>
+              <div class="cardCategory-Back drink-Back">
+                <h4>Cerveja</h4>
+                <p>Fino</p>
+                <p>300Kz</p>
+              </div>
+            </div>
+            <div class="cardCategory drinkCard">
+              <div class="cardBarItem drinkItem cardCategory-Front">
+                <img src="./img/img-01.jpg" alt="" />
+              </div>
+              <div class="cardCategory-Back drink-Back">
+                <h4>Gasosa</h4>
+                <p>Fanta de Laranja</p>
+                <p>300Kz</p>
+              </div>
+            </div>
+            <div class="cardCategory drinkCard">
+              <div class="cardBarItem drinkItem cardCategory-Front">
+                <img src="./img/img-02.jpg" alt="" />
+              </div>
+              <div class="cardCategory-Back drink-Back">
+                <h4>Gasosa</h4>
+                <p>Fanta de Laranja</p>
+                <p>300Kz</p>
+              </div>
+            </div>
+          </div>
+          <div class="barCategory categoryFoods" id="foodItem">
+            <div class="cardCategory foodCard">
+              <div class="cardBarItem foodItem cardCategory-Front">
+                <img src="./img/gallery-img-06.jpg" alt="" />
+              </div>
+              <div class="cardCategory-Back food-Back">
+                <h4>Gasosa</h4>
+                <p>Fanta de Laranja</p>
+                <p>300Kz</p>
+              </div>
+            </div>
+            <div class="cardCategory foodCard">
+              <div class="cardBarItem foodItem cardCategory-Front">
+                <img src="./img/gallery-img-06.jpg" alt="" />
+              </div>
+              <div class="cardCategory-Back food-Back">
+                <h4>Gasosa</h4>
+                <p>Fanta de Laranja</p>
+                <p>300Kz</p>
+              </div>
+            </div>
+            <div class="cardCategory foodCard">
+              <div class="cardBarItem foodItem cardCategory-Front">
+                <img src="./img/img-04.jpg" alt="" />
+              </div>
+              <div class="cardCategory-Back food-Back">
+                <h4>Gasosa</h4>
+                <p>Fanta de Laranja</p>
+                <p>300Kz</p>
+              </div>
+            </div>
+            <div class="cardCategory foodCard">
+              <div class="cardBarItem foodItem cardCategory-Front">
+                <img src="./img/img-04.jpg" alt="" />
+              </div>
+              <div class="cardCategory-Back food-Back">
+                <h4>Gasosa</h4>
+                <p>Fanta de Laranja</p>
+                <p>300Kz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contacts" class="contacts">
+      <div class="socialNetworks">
+        <ul class="socialNetworksList">
+          <li class="socialNetworksItem facebook">
+            <a href="#"><i class="fa-brands fa-facebook-f fa-2xl icon"></i></a>
+          </li>
+          <li class="socialNetworksItem whats">
+            <a href="#"><i class="fa-brands fa-whatsapp fa-2xl icon"></i></a>
+          </li>
+          <li>
+            <address>
+              <p>Kikolo, lado oposto a Agência da Macon</p>
+              <p>Tel: +244 923718464</p>
+            </address>
+          </li>
+        </ul>
+      </div>
+      <div class="phone"></div>
+      <div class="madeBy">
+        <p>&copy; Todos dos direitos resevados, A CASA Z - Hospedaria & Bar</p>
+      </div>
+    </footer>
+
+    <script>
+      function resizeWindow() {
+        if (window.innerWidth < 800) {
+          burgerMenu.style.display = "block";
+          mainMenu.style.display = "none";
+        } else {
+          burgerMenu.style.display = "none";
+        }
+      }
+      function showMenu() {
+        if (mainMenu.style.display == "none") {
+          mainMenu.style.display = "block";
+        } else {
+          mainMenu.style.display = "none";
+        }
+      }
+      function showBarList() {
+        drinkItems.style.display = "flex";
+        foodItem.style.display = "flex";
+      }
+
+      function showFoodList() {
+        drinkItems.style.display = "none";
+        foodItem.style.display = "flex";
+      }
+      function showDrinkList() {
+        drinkItems.style.display = "flex";
+        foodItem.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
